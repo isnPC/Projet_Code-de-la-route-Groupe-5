@@ -1,0 +1,26 @@
+Projet BAC
+
+Test Code de la route
+
+Cahier des charges:
+Groupe 5 : Louis DEON / Axel LEBOURG / Léonie GUERITAS
+
+
+Le but de l'application est de permettre à l'utilisateur de s'entraîner au code de la route avec les nombreuses questions proposées et les réponses expliquées. Pour
+chaques questions, nous mettrons un temps de reponse et plusieurs choix de réponse. A la fin du test, l'utilisateur aura sont nombre de bonne reponse.
+
+Besoins :
+-EduPython
+-HTML
+-CSS
+-Serie de questions/réponses
+-Images/vidéos
+
+Contraintes :
+-Les questions ne doivent pas réapparaitre deux fois lors d'une même session
+-Doit pouvoir compter le nombre de points
+-Le graphisme
+
+Pour le 14 février
+Avoir trouver des images, des questions et les réponses expliquées
+Commencer a faire le programme Python associé
