@@ -1,0 +1,58 @@
+1.Le panneau de danger prend effet à:
+		A.6km
+		B.150km
+  Il indique une succession de virages dont le 1er est:
+		A.A droite
+		B.A gauche
+		
+2.Je peux dépasser le camion:
+		A.Oui
+		B.Non
+		
+3.Avant de partir, je laisse tourner mon moteur pour qu'il monte en température:
+		A.Oui
+		B.Non
+		
+4.Il neige, je peux rouler avec des feux de:
+		A.Croisement
+		B.Croisement et antibrouillar avant
+		C.Croisement et antibrouillard avant et arrière
+		D.Position et antibrouillard avant et arrière
+
+5.En tant qu'automobiliste, vous devez être plus vigilant lorsque :
+		A.Le tramway est arrêté
+		B.Le tramway circule
+		
+6.Je viens de remplir un constat amiable avec un autre conducteur. Je peux modifier les
+declarations inscrites au recto:
+		A.Oui
+		B.Non
+
+7.En conduisant, je peux utiliser mon portable pour écrire un texto ou composer un
+numéro :
+		A.Oui
+		B.Non
+	
+
+8.Je viens de dépasser l'emplacement d'arrêt d'urgence lorsque mon véhicule tombe en
+panne:
+		A.Je tente de reculer
+		B.J'allume mes feux de détresse
+		C.Je me serre le plus à droite possible
+	
+9.Sur la voie d'accélération, pour entrer sur l'autoroute, je dois:
+		A.Céder le passage aux usagers qui sont déjà engagés
+		B.Accélérer jusqu'à 110 km/h avant de m'engager
+		C.Ralentir et m'arrêter si l'insertion m'est refusé par les autres usagers
+		
+10.La durée maximum de stationnement est de:
+		A.1 journée
+		B.1 semaine
+		C.10 jours
+		D.1 mois
+		
+11.L'oubli des clignotants pour indiquer un changement de direction peut être sanctionné 
+par une amende et un retrait de points
+		A.Oui
+		B.Non
+		
