@@ -1,0 +1,110 @@
+1.Le panneau de danger prend effet à:
+		A.6km
+		B.150km
+  Il indique une succession de virages dont le 1er est:
+		A.A droite
+		B.A gauche
+		
+REPONSES:B et C
+En l'absence d'un panonceau indiquant la distance entre le panneau et
+le danger éventuel, ces panneaux sont placés à 50 mètres du danger en 
+agglomération, et à 150 mètres hors agglomération. 
+Le panonceau indique que la zone de virage dangereux s'étend sur 6 kilomètres. 
+La première courbe de la flèche indique que le premier virage dangereux sera un virage à droite.
+
+2.Je peux dépasser le camion:
+		A.Oui
+		B.Non
+		
+REPONSE: B
+Les flèches de rabattement sont, en général, au nombre de 3 mais peuvent se trouver par 2 
+en agglomération à cause du manque de place. Il vous est interdit d'entamer un dépassement à
+la hauteur de ces flèches, dans cette situation vous ne pouvez donc pas dépasser.
+
+3.Avant de partir, je laisse tourner mon moteur pour qu'il monte en température:
+		A.Oui
+		B.Non
+		
+REPONSE:B
+Il est inutile de faire chauffer votre moteur à l'arrêt. Conduire sans à-coups et à vitesse
+modérée durant cinq kilomètres lui permet d'atteindre sa température normale.
+
+4.Il neige, je peux rouler avec des feux de:
+		A.Croisement
+		B.Croisement et antibrouillar avant
+		C.Croisement et antibrouillard avant et arrière
+		D.Position et antibrouillard avant et arrière
+
+REPONSE:A, B et C
+Hors agglomération, vous avez l'obligation de rouler avec les feux de croisement lorsqu'il neige.
+Les feux de brouillard avant ou arrière sont facultatifs.
+
+5.En tant qu'automobiliste, vous devez être plus vigilant lorsque :
+		A.Le tramway est arrêté
+		B.Le tramway circule
+		
+REPONSE: A
+Lorsque vous circulez près d'un tramway à l'arrêt, vous devez redoubler de vigilance car il
+pourrait cacher des piétons à votre vue.
+
+6.Je viens de remplir un constat amiable avec un autre conducteur. Je peux modifier les
+declarations inscrites au recto:
+		A.Oui
+		B.Non
+		
+REPONSE:B
+Une fois complété et signé le constat ne doit pas être modifié. Par contre, il est 
+possible d'apporter des précisions au verso du document.
+
+7.En conduisant, je peux utiliser mon portable pour écrire un texto ou composer un
+numéro :
+		A.Oui
+		B.Non
+	
+REPONSE:B
+Au volant, il est interdit de tenir en main un téléphone portable que ce soit 
+pour écrire un texto ou pour composer un numéro.
+
+8.Je viens de dépasser l'emplacement d'arrêt d'urgence lorsque mon véhicule tombe en
+panne:
+		A.Je tente de reculer
+		B.J'allume mes feux de détresse
+		C.Je me serre le plus à droite possible
+		
+REPONSE:B et C
+Faire une marche arrière serait dangereux et totalement interdit. Je mets donc mes feux de 
+détresse pour avertir les autres conducteurs et serre mon véhicule le plus possible sur la
+droite.
+
+9.Sur la voie d'accélération, pour entrer sur l'autoroute, je dois:
+		A.Céder le passage aux usagers qui sont déjà engagés
+		B.Accélérer jusqu'à 110 km/h avant de m'engager
+		C.Ralentir et m'arrêter si l'insertion m'est refusé par les autres usagers
+		
+REPONSE:A
+Lors de votre insertion sur l'autoroute, vous devez profiter de la voie d'accélération pour 
+vous mettre à une allure qui vous permettra de vous insérer de manière fluide dans le flot 
+des véhicules déjà engagés. Vous devez cependant céder le passage aux usagers déjà présents 
+avant de changer de voie, pour ne pas gêner la circulation.
+
+10.La durée maximum de stationnement est de:
+		A.1 journée
+		B.1 semaine
+		C.10 jours
+		D.1 mois
+		
+REPONSE:B
+Lorsque vous êtes en stationnement, vous ne pouvez pas dépasser une durée de 7 jours. 
+Sinon, votre stationnement sera considéré comme "abusif".
+
+11.L'oubli des clignotants pour indiquer un changement de direction peut être sanctionné 
+par une amende et un retrait de points
+		A.Oui
+		B.Non
+		
+REPONSE:A
+À quoi servent les clignotants ? 
+À avertir les usagers devant et derrière moi, pour qu'ils adaptent leur comportement. 
+Ne pas utiliser les clignotants est dangereux. 
+C'est pour cette raison que leur oubli peut être sanctionné d'une amende forfaitaire de 35€
+et d'un retrait de 3 points.
