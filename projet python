@@ -1,0 +1,29 @@
+
+Q1 = ["Le panneau de danger prend effet à:", "6km", "150m", "", "", 2]
+
+def qaffichage(question): 
+    print(question[0])
+    for i in range(4):
+        if question[i+1] != "":
+            print(i+1, question[i+1])
+
+
+
+def testReponse(question,reponse):
+        if reponse == Q1[5]:
+            return True
+        else:
+            return False
+    
+
+def reponse(question):
+    """dire ce que fait la fonction ... """
+    reponse = int(input("Quel est votre réponse?"))
+    if testReponse(question,reponse):
+        print("bravo")
+    else:
+        print("tu vas marcher à pied")
+
+# test fonctions
+qaffichage(Q1)
+reponse(Q1)
