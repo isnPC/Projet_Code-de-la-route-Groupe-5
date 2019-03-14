@@ -1,0 +1,37 @@
+from random import randint #pour pouvoir faire une fonction aleatoire
+
+Q1 = ["Le panneau de danger prend effet à:", ["6km", "150m"], 2]
+Q2 = ["Je peux dépasser le camion:", ["Oui", "Non"], 2]
+Q3 = ["Avant de partir, je laisse tourner mon moteur pour qu'il monte en température:", ["Oui", "Non"], 2]
+Q4 = ["Il neige, je peux rouler avec des feux de:", ["Croisement", "Croisement et antibrouillard avant", "Croisement et antibrouillard avant et arrière", "Position et antibrouillard avant et arrière"], 123]
+listeQuestion = [Q1, Q2, Q3, Q4]
+
+numQuestion = randint(1,len(listeQuestion)) #choix aleatoire de la question
+
+question = listeQuestion[numQuestion-1] #prendre un nombre aleatoire entre les differentes questions
+
+def qaffichage(question): #affiche le premier element de la liste qui est la question
+    print(question[0])
+    for i in range(len(question[1])):
+        print(i+1, question[1][i])
+
+
+
+def testReponse(question,reponse): #regarde si la reponse est juste ou fausse
+        if reponse == question[2]:
+            return True
+        else:
+            return False
+    
+
+def reponse(question): #affiche le dernier element de liste qui est la reponse
+    """dire ce que fait la fonction ... """
+    reponse = int(input("Quel est votre réponse?"))
+    if testReponse(question,reponse):
+        print("bravo")
+    else:
+        print("tu vas marcher à pied")
+
+# test fonctions
+qaffichage(question)
+reponse(question)
