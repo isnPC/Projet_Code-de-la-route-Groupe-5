@@ -1,0 +1,81 @@
+import random
+from random import randint #pour pouvoir faire une fonction aleatoire
+
+borneQuesRep = "quesRep.txt"
+
+def lectureQuesRep(borneQuesRep):
+    fichier = open(borneQuesRep, "r")
+    listeQuestion = []
+    for ligne in fichier:
+        listeQuestion.append(ligne)
+    return listeQuestion
+
+def quesAlea(borneQuesRep):
+    listeQuestion = lectureQuesRep(borneQuesRep)
+    random.shuffle(listeQuestion)
+    return listeQuestion
+
+def quesaffichage(listeQuestion): #affiche le premier element de la liste qui est la question
+    question = []
+    for question in listeQuestion:
+        question = question.strip('\n')#enlever retour a la ligne
+        question = question.split(';') #separer elements pour transformer chaine de caractere en liste
+    return question
+
+
+
+def queaffichage(question): #affiche le premier element de la liste qui est la question
+    ques = question.split(';')
+    return ques
+
+def affichagge(ques): #affiche le premier element de la liste qui est la question
+        print(ques[0]) #affiche la question
+        print(ques[1]) #affiche les propositions
+        print(ques[2]) #affiche les propositions
+        if ques[3] != "": #si il n'y a pas de proposition n'affiche rien(evite un espace)
+            print(ques[3]) #affiche les propositions
+        if ques[4] != "": #si il n'y a pas de proposition n'affiche rien(evite un espace)
+            print(ques[4]) #affiche les propositions
+
+def reponses(ques): #affiche le dernier element de liste qui est la reponse
+    """dire ce que fait la fonction ... """
+    reponse = input("Quel est votre réponse?")
+    if testReponse(ques,reponse) == True:
+        print("Bonne réponse!")
+    else:
+        print("FAUX!")
+    print(ques[6])
+
+def testReponse(ques, reponse): #regarde si la reponse est juste ou fausse
+        if reponse == ques[5]:
+            return True
+        else:
+            return False
+
+
+
+def pointsrep(ques, reponse):
+    repFauses = 0
+    while testReponse(ques, reponse) == False:
+        repFausses = repFauses+1
+
+        return repFausses
+
+
+
+
+# test fonctions
+
+lectureQuesRep(borneQuesRep)
+listeQuestion = quesAlea(borneQuesRep)
+
+while len(listeQuestion) != 0:
+    numQuestion = randint(1,len(listeQuestion)) #choix aleatoire de la question
+    question = listeQuestion[numQuestion-1] #prendre un nombre aleatoire entre les differentes questions
+    ques = queaffichage(question)
+    affichagge(ques)
+    listeQuestion.remove(question) #enleve une question de la liste une fois qu'elle a Ã©tÃ© posÃ©e
+    reponse = reponses(ques)
+    testReponse(ques, reponse)
+
+
