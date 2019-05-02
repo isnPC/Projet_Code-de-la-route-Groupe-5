@@ -1,0 +1,13 @@
+s = e.get()
+
+You can also bind the entry widget to a StringVar instance, and set or get the entry text via that variable:
+
+v = StringVar()
+e = Entry(master, textvariable=v)
+e.pack()
+
+v.set("a default value")
+s = v.get()
+
+
+http://effbot.org/tkinterbook/entry.htm
