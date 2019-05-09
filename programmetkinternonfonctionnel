@@ -1,0 +1,184 @@
+import random
+from random import randint #pour pouvoir faire une fonction aleatoire
+import tkinter as tk
+from PIL import Image, ImageTk
+
+
+
+def lectureQuesRep(borneQuesRep):
+    """Ouvre le fichier des bornes de réponses et renvoie une liste dont chaque élément correspond à une question et ses paramétres"""
+    fichier = open(borneQuesRep, "r")
+    listeQuestion = []
+    for ligne in fichier:
+        listeQuestion.append(ligne)
+    return listeQuestion
+
+def aleaQues(borneQuesRep):
+    """choisi un élément aléatoire de la liste et le renvoie"""
+    listeQuestion = lectureQuesRep(borneQuesRep)
+    random.shuffle(listeQuestion)
+    return listeQuestion
+
+def choixQues(paramQues):
+    """renvoie une liste dont chaque élément correspond a un paramètre"""
+    question = paramQues.split(';')
+    return question
+
+def affichage(question): 
+    """affiche la question et les propositions du paramètre question"""
+    print(question[0]) 
+    print(question[1]) 
+    print(question[2]) 
+    if question[3] != "":
+        print(question[3]) 
+    if question[4] != "": 
+        print(question[4]) 
+
+def afficheRep(question): #pouvoir ecrire sa reponse et dis si la reponse est vraies ou fausse
+    """affiche si la reponse est juste ou fausse"""
+    """reponse = input("Quel est votre réponse?")"""
+    if testReponse(question,reponse) == True:
+        print("Bonne réponse!")
+    else:
+        print("FAUX!")
+    print(question[6])
+    return reponse
+
+def testReponse(question, reponse): 
+        """verifie si la reponse est juste, renvoie True ou fausse et renvoie False"""
+        if reponse == question[5]:
+            return True
+        else:
+            return False
+
+
+def pointsrepFausses(reponse, repFausses): #nombre reponses fausses
+    """si la reponse est fausse, le nombre de reponses fausse augmente de 1"""
+    if testReponse(question,reponse) == False:
+        repFausses = repFausses+1
+        return repFausses
+    else:
+        repFausses = repFausses
+        return repFausses
+
+def singPlur(repFausses): 
+    """si le nombre de reponse fausse est superieur a 1, le mot fautes'accorde au pluriel"""
+    if repFausses <= 1:
+        return "faute"
+    else:
+        return "fautes"
+
+
+def afficher_image(x):
+    """affiche l'image correspondante a la question posée"""
+
+    image = Image.open(x)
+    photo = ImageTk.PhotoImage(image)
+
+    canvas = tk.Canvas(window, width = image.size[0], height = image.size[1])
+    canvas.create_image(0,0, anchor = tk.NW, image=photo)
+    canvas.pack()
+    window.mainloop()
+
+def consigne():
+    """si le bouton est actionné, ecrit les consignes"""
+    t = tk.Label(window, text="Pour répondre écrivez le numéro de votre réponse, si vous avez plusieurs choix à faire ne pas mettre d'espace entre les numéros.")
+    t.pack()
+
+
+def validation(question):
+    global nbBonneRep
+    rep = reponse.get()
+    if testReponse(question, rep):
+        nbBonneRep +=1
+    
+    
+    
+
+borneQuesRep = "quesRep.txt"
+nbQues = 0
+repFausses = 0
+lectureQuesRep(borneQuesRep)
+listeQuestion = aleaQues(borneQuesRep)
+
+"""while nbQues != 10:
+    numQuestion = randint(1,len(listeQuestion)) #choix aleatoire de la question
+    paramQues = listeQuestion[numQuestion-1] #prendre un nombre aleatoire entre les differentes questions
+    question = choixQues(paramQues)
+    x = question[7]
+    afficher_image(x)
+    affichage(question)
+    listeQuestion.remove(paramQues) #enleve une question de la liste une fois qu'elle a Ã©tÃ© posÃ©e
+    reponse = afficheRep(question)
+    testReponse(question, reponse)
+    repFausses = pointsrepFausses(reponse, repFausses)
+    nbQues = nbQues+1
+accordfautes = singPlur(repFausses)
+print("Vous avez fait", repFausses, accordfautes,"sur", nbQues, "questions")"""
+
+
+def chargePhoto():
+    global image, photo
+    question = choixQues(paramQues)
+    x = question[7]
+    image = Image.open(x)
+    photo = ImageTk.PhotoImage(image)
+    #canvas.itemconfig(img, img=image)
+    
+    
+
+numQuestion = randint(1,len(listeQuestion)) #choix aleatoire de la question
+paramQues = listeQuestion[numQuestion-1] #prendre un nombre aleatoire entre les differentes questions
+question = choixQues(paramQues)
+x = question[7]
+
+
+window = tk.Tk()
+chargePhoto()
+
+
+consigne = tk.Button(window, text="Consignes", command=chargePhoto)
+consigne.pack()
+canvas = tk.Canvas(window, width = image.size[0], height = image.size[1])
+canvas.create_image(0,0, anchor = tk.NW, image=photo)
+canvas.pack()
+
+#while nbQues != 10:
+#    question = choixQues(paramQues)
+#    image = Image.open(x)
+#    photo = ImageTk.PhotoImage(image)
+
+#    consigne = tk.Button(window, text="Consignes", command=consigne)
+#    consigne.pack()
+
+
+
+
+
+#    q = tk.Label(window, text=question[0])
+#    q.pack()
+#    a = tk.Label(window, text=question[1])
+#    a.pack()
+#    b = tk.Label(window, text=question[2])
+#    b.pack()
+#    if question[3] != "":
+#        c = tk.Label(window, text=question[3])
+#        c.pack()
+#    if question[4] != "":
+#        d = tk.Label(window, text=question[4])
+#        d.pack()
+#    reponse = tk.Entry(window, width=40)
+#    reponse.pack()
+
+#    validation = tk.Button(window, text="Confirmer", command=validation)
+#    validation.pack()
+
+
+
+
+
+window.mainloop()
+
+""" justif = tk.Label(root, text=question[6])
+justif.pack()"""
+""", command=rr(reponse)"""
